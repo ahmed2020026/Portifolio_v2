@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+.container {
+    @apply p-5 mx-auto relative
+}
+
+.title {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 5px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        background-color: oklch(62.7% 0.194 149.214);
+    }
+}
+
+
+
+.ele {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(0, 166, 62);
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        left: -25px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+}
