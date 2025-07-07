@@ -10,10 +10,13 @@ const Spinner = ({ size = "md", color = "blue-500" }) => {
 
     return (
         <div
-            className={`inline-block ${sizeClasses[size]} animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]`}
+            className={`inline-block ${sizeClasses[size]} text-green-600 animate-spin rounded-full border-4 border-solid border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]`}
+            style={{ borderColor: `currentColor`, borderRightColor: 'transparent' }}
             role="status"
         >
-            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+            <span
+                className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 text-amber-200"
+            >
                 Loading...
             </span>
         </div>

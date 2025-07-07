@@ -5,6 +5,7 @@ import { Home } from './component/pages/Home';
 import { lazy, Suspense } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Spinner from './component/sections/Spinner';
 // ..
 AOS.init();
 
@@ -17,7 +18,7 @@ export default function App() {
   return (
     <>
       <HashRouter>
-        <Suspense fallback={<div>Looding...</div>}>
+        <Suspense fallback={<div className='w-full min-h-dvh flex justify-center items-center'>{<Spinner size="xl" color="text-green-500" />}</div>}>
           <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
             <Header />
           </header>
