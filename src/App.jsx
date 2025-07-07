@@ -1,10 +1,10 @@
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './component/Header';
 import { Footer } from './component/Footer';
 import { Home } from './component/pages/Home';
 import { lazy, Suspense } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 
@@ -16,7 +16,7 @@ const SkillsPage = lazy(() => import('./component/pages/Skills'));
 export default function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Suspense fallback={<div>Looding...</div>}>
           <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
             <Header />
@@ -34,7 +34,7 @@ export default function App() {
             <Footer />
           </footer>
         </Suspense>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
