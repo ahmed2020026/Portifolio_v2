@@ -10,19 +10,19 @@ export const NavElements = [
     },
     {
         text: 'About',
-        url: '/About'
+        url: '/about'
     },
     {
         text: 'Skills',
-        url: '/Skills'
+        url: '/skills'
     },
     {
         text: 'Projects',
-        url: '/Projects'
+        url: '/projects'
     },
     {
         text: 'Contact Us',
-        url: '/Contact'
+        url: '/contact'
     }
 ]
 

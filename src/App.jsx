@@ -4,7 +4,7 @@ import { Footer } from './component/Footer';
 import { Home } from './component/pages/Home';
 import { lazy, Suspense } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 // ..
 AOS.init();
 
@@ -24,10 +24,10 @@ export default function App() {
           <main>
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/About' element={<AboutPage />} />
-              <Route path='/Skills' element={<SkillsPage />} />
-              <Route path='/Projects' element={<ProjectsPage />} />
-              <Route path='/Contact' element={<ContactPage />} />
+              <Route path='/about' element={<AboutPage />} />
+              <Route path='/skills' element={<SkillsPage />} />
+              <Route path='/projects' element={<ProjectsPage />} />
+              <Route path='/contact' element={<ContactPage />} />
             </Routes>
           </main>
           <footer>
