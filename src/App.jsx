@@ -1,9 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
 import { Header } from './component/Header';
 import { Footer } from './component/Footer';
 import { Home } from './component/pages/Home';
 import { lazy, Suspense } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const ProjectsPage = lazy(() => import('./component/pages/Projects'));
 const AboutPage = lazy(() => import('./component/pages/About'));

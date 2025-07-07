@@ -5,7 +5,8 @@ export const Contact = () => {
         <>
             <Title title="Contact US" />
             <div className="container mx-auto max-w-4xl text-center">
-                <form className="mt-12 grid gap-6 max-w-xl mx-auto">
+                <form className="mt-12 grid gap-6 max-w-xl mx-auto" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <input
                         type="text"
                         placeholder="Your Name"
