@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './component/Header';
 import { Footer } from './component/Footer';
 import { Home } from './component/pages/Home';
@@ -16,7 +16,7 @@ const SkillsPage = lazy(() => import('./component/pages/Skills'));
 export default function App() {
   return (
     <>
-      <BrowserRouter basename="/Portifolio.">
+      <HashRouter>
         <Suspense>
           <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
             <Header />
@@ -34,7 +34,7 @@ export default function App() {
             <Footer />
           </footer>
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
