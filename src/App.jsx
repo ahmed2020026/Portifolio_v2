@@ -16,25 +16,23 @@ const SkillsPage = lazy(() => import('./component/pages/Skills'));
 export default function App() {
   return (
     <>
-      <HashRouter>
-        <Suspense>
-          <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
-            <Header />
-          </header>
-          <main>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/About' element={<AboutPage />} />
-              <Route path='/Skills' element={<SkillsPage />} />
-              <Route path='/Projects' element={<ProjectsPage />} />
-              <Route path='/Contact' element={<ContactPage />} />
-            </Routes>
-          </main>
-          <footer>
-            <Footer />
-          </footer>
-        </Suspense>
-      </HashRouter>
+
+      <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
+        <Header />
+      </header>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/About' element={<AboutPage />} />
+          <Route path='/Skills' element={<SkillsPage />} />
+          <Route path='/Projects' element={<ProjectsPage />} />
+          <Route path='/Contact' element={<ContactPage />} />
+        </Routes>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+
     </>
   );
 }
