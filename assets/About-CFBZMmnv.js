@@ -1,0 +1,1 @@
+import{j as t,A as s}from"./index-DRBITLz8.js";const o=()=>t.jsx(t.Fragment,{children:t.jsx("section",{id:"About",className:"pt-30 min-h-dvh pb-10 md:pb-0",children:t.jsx(s,{})})});export{o as default};
