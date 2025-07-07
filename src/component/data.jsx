@@ -31,7 +31,7 @@ export const skillsData = [
         category: "Frontend Development",
         skills: [
             "HTML",
-            "CSS" ,
+            "CSS",
             "JavaScript",
             "Tailwind CSS",
             "BootStrap",

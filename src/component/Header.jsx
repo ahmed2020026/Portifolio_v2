@@ -22,9 +22,9 @@ export const Header = () => {
                     ))}
                 </nav>
                 {/* menu in Mobile */}
-                <nav className={order ? 'px-3 absolute top-full left-0 shadow hidden md:hidden w-full bg-[#212222]' : 'px-3 py-3 left-0 absolute top-[100%] md:hidden shadow block w-full z-0 bg-[#212222]'}>
+                <nav className={order ? 'px-3 absolute top-full left-0 shadow border-2 border-[#ccc] hidden md:hidden w-full bg-[#212222]' : 'px-3 py-3 left-0 absolute top-[100%] md:hidden shadow-2xl border-2 border-[#cccccc1e] rounded-b-xl block w-full z-0 bg-[#212222]'}>
                     {NavElements.map((a , i) => (
-                        <Link to={a.url} key={i} className='px-3 block py-2 text-white hover:text-green-500 rounded'>{a.text}</Link>
+                        <Link to={a.url} key={i} className='link px-3 block py-2 duration-700 text-white rounded'>{a.text}</Link>
                     ))}
                 </nav>
                 <div className='text-white cursor-pointer p-2 rounded block md:hidden' onClick={() => OpenMenu(!order)}>

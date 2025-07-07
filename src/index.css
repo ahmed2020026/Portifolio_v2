@@ -54,3 +54,20 @@
     }
 
 }
+
+.link:hover {
+    @apply text-green-500 bg-[#ffffff1a]
+}
+
+.contact-btn:hover {
+    @apply bg-green-600 text-white
+}
+
+.group:hover{
+    img{
+        @apply scale-110;
+    }
+    .source{
+        @apply opacity-100
+    }
+}

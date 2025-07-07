@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
-import { About } from "./About"
-import { Skills } from "./Skills"
-import { Projects } from "./Projects"
-import { Contact } from "./Contact"
+import { About } from "../sections/About"
+import { Skills } from "../sections/Skills"
+import { Projects } from "../sections/Projects"
+import { Contact } from "../sections/Contact"
+
 
 
 export const Home = () => {
@@ -18,7 +19,7 @@ export const Home = () => {
                             <p>I create responsive and interactive web interfaces using modern technologies like React, Tailwind CSS, and Bootstrap.</p>
                         </div>
                         <div className="btns mt-10">
-                            <Link to='/Contact' className="border-2 rounded border-green-600 text-green-600 px-3 py-2 hover:bg-green-600 hover:text-white transition-all">Contact US</Link>
+                            <Link to='/Contact' className="contact-btn border-2 rounded border-green-600 text-green-600 px-3 py-2 hover:bg-green-600 hover:text-white transition-all">Contact US</Link>
                         </div>
                     </div>
                 </div>
