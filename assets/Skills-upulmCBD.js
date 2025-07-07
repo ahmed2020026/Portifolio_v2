@@ -1,1 +1,0 @@
-import{j as s,S as e}from"./index-BslhkmVX.js";const l=()=>s.jsx(s.Fragment,{children:s.jsx("section",{id:"Skill",className:"pt-30 min-h-dvh pb-10 md:pb-0",children:s.jsx(e,{})})});export{l as default};
