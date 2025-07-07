@@ -16,7 +16,7 @@ const SkillsPage = lazy(() => import('./component/pages/Skills'));
 export default function App() {
   return (
     <>
-      <BrowserRouter basename="/Portifolio./">
+      <BrowserRouter basename="/Portifolio.">
         <Suspense>
           <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
             <Header />
