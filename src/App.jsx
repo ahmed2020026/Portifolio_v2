@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './component/Header';
 import { Footer } from './component/Footer';
 import { Home } from './component/pages/Home';
@@ -16,23 +16,25 @@ const SkillsPage = lazy(() => import('./component/pages/Skills'));
 export default function App() {
   return (
     <>
-
-      <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
-        <Header />
-      </header>
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/About' element={<AboutPage />} />
-          <Route path='/Skills' element={<SkillsPage />} />
-          <Route path='/Projects' element={<ProjectsPage />} />
-          <Route path='/Contact' element={<ContactPage />} />
-        </Routes>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-
+      <BrowserRouter basename="/Portifolio.">
+        <Suspense fallback={<div>Looding...</div>}>
+          <header className='shadow-2xl fixed z-50 w-full bg-[#212222]'>
+            <Header />
+          </header>
+          <main>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/About' element={<AboutPage />} />
+              <Route path='/Skills' element={<SkillsPage />} />
+              <Route path='/Projects' element={<ProjectsPage />} />
+              <Route path='/Contact' element={<ContactPage />} />
+            </Routes>
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </Suspense>
+      </BrowserRouter>
     </>
   );
 }
