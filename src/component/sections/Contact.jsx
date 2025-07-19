@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Title } from "./title";
 import emailjs from '@emailjs/browser';
+import Toastify from 'toastify-js'
 
 export const Contact = () => {
 
@@ -13,7 +14,14 @@ export const Contact = () => {
         })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    Toastify({
+                        text: "Success",
+                        duration: 3000,
+                        position:'right',
+                        style: {
+                            background: "linear-gradient(to right, #00b09b, #96c93d)",
+                        },
+                    }).showToast();
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
