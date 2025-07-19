@@ -19,6 +19,7 @@ export const Contact = () => {
                     console.log('FAILED...', error.text);
                 },
             );
+        Array.from(form.current.children).forEach(ele => ele.value = '');
     };
     return (
         <>

@@ -12,13 +12,13 @@ export const Projects = () => {
                     {
                         ProjectsData.map((project, index) => {
                             return (
-                                <div key={index} className="group overflow-hidden relative" data-aos="zoom-in" data-aos-duration='1500' data-aos-delay={`${Number(index + 1)*200}`}>
+                                <div key={index} className="group overflow-hidden relative" data-aos="zoom-in" data-aos-duration='1500' data-aos-delay={`${Number(index + 1) * 200}`}>
                                     <img src={project.img} className="w-full transition-all duration-500 h-full" />
                                     <div className="source absolute top-0 left-0 w-full h-full flex items-center justify-center bg-[#21222236] opacity-0 transition-opacity duration-500">
-                                        <a href="#" target="_blank" className="text-white p-2 bg-green-600 mx-2 rounded">
+                                        <a href={`${project.url}`} target="_blank" className="text-white p-2 bg-green-600 mx-2 rounded">
                                             <VisibilityIcon />
                                         </a>
-                                        <a href="#" target="_blank" className="text-white p-2 bg-green-600 mx-2 rounded">
+                                        <a href={`${project.sourse}`} target="_blank" className="text-white p-2 bg-green-600 mx-2 rounded">
                                             <GitHubIcon />
                                         </a>
                                     </div>
