@@ -57,50 +57,50 @@ export const ProjectsData = [
     {
         img: img1,
         address: {
-            url: 'https://ahmed2020026.github.io/Bein_Sport/',
-            sourse: 'https://github.com/ahmed2020026/Bein_Sport',
+            url: '/Bein_Sport/',
+            sourse: '/Bein_Sport',
         }
     },
     {
         img: img2,
         address: {
-            url: 'https://ahmed2020026.github.io/portifolio/',
-            sourse: 'https://github.com/ahmed2020026/portifolio',
+            url: '/portifolio/',
+            sourse: '/portifolio',
         }
     },
     {
         img: img3,
         address: {
-            url: 'https://ahmed2020026.github.io/FirstProject/',
-            sourse: 'https://ahmed2020026.github.io/FirstProject',
+            url: '/FirstProject/',
+            sourse: '/FirstProject',
         }
     },
     {
         img: img4,
         address: {
-            url: 'https://ahmed2020026.github.io/resturant/',
-            sourse: 'https://ahmed2020026.github.io/resturant',
+            url: '/resturant/',
+            sourse: '/resturant',
         }
     },
     {
         img: img5,
         address: {
-            url: 'https://ahmed2020026.github.io/raya_site/',
-            sourse: 'https://ahmed2020026.github.io/raya_site',
+            url: '/raya_site/',
+            sourse: '/raya_site',
         }
     },
     {
         img: img6,
         address: {
-            url: 'https://ahmed2020026.github.io/estate/',
-            sourse: 'https://ahmed2020026.github.io/estate',
+            url: '/Estate_project/',
+            sourse: '/Estate_project',
         }
     },
     {
         img: img7,
         address: {
-            url: 'https://ahmed2020026.github.io/e-commerce/',
-            sourse: 'https://ahmed2020026.github.io/e-commerce',
+            url: '/e-commerce/',
+            sourse: '/e-commerce',
         }
     },
 ]
