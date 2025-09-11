@@ -5,6 +5,7 @@ import img4 from './image/res.png'
 import img5 from './image/e-commerce.png'
 import img6 from './image/estate.webp'
 import img7 from './image/G-store.png'
+import img8 from './image/dashboard.png'
 export const NavElements = [
     {
         text: 'Home',
@@ -57,50 +58,57 @@ export const ProjectsData = [
     {
         img: img1,
         address: {
-            url: '/Bein_Sport/',
+            url: 'https://ahmed2020026.github.io/Bein_Sport/',
             sourse: '/Bein_Sport',
         }
     },
     {
         img: img2,
         address: {
-            url: '/portifolio/',
+            url: 'https://ahmed2020026.github.io/portifolio/',
             sourse: '/portifolio',
         }
     },
     {
         img: img3,
         address: {
-            url: '/FirstProject/',
+            url: 'https://ahmed2020026.github.io/FirstProject/',
             sourse: '/FirstProject',
         }
     },
     {
         img: img4,
         address: {
-            url: '/resturant/',
+            url: 'https://ahmed2020026.github.io/resturant/',
             sourse: '/resturant',
         }
     },
     {
         img: img5,
         address: {
-            url: '/raya_site/',
+            url: 'https://ahmed2020026.github.io/raya_site/',
             sourse: '/raya_site',
         }
     },
     {
         img: img6,
         address: {
-            url: '/Estate_project/',
+            url: 'https://ahmed2020026.github.io/Estate_project/',
             sourse: '/Estate_project',
         }
     },
     {
         img: img7,
         address: {
-            url: '/e-commerce/',
+            url: 'https://ahmed2020026.github.io/e-commerce/',
             sourse: '/e-commerce',
+        }
+    },
+    {
+        img: img8,
+        address: {
+            url: 'http://g-store-dashboard.vercel.app/',
+            sourse: '/Dashboard',
         }
     },
 ]
