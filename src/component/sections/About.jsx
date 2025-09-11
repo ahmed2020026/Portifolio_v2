@@ -40,7 +40,7 @@ export const About = () => {
                         </p>
 
                         <a
-                            href="./ASM_CV.pdf"
+                            href="./Ahmed_Samir_FrontEnd_CV"
                             download
                             className="px-5 py-3 bg-green-600 text-white mt-6 rounded-lg inline-flex items-center gap-2 hover:bg-green-700 transition-all shadow-md hover:shadow-green-600/40"
                         >
