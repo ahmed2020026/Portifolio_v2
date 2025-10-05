@@ -1,1 +1,0 @@
-import{j as t,C as s}from"./index-CO6G-irj.js";const n=()=>t.jsx(t.Fragment,{children:t.jsx("section",{id:"Contact",className:"pt-30 min-h-dvh pb-10 md:pb-0",children:t.jsx(s,{})})});export{n as default};
