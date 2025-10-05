@@ -9,26 +9,41 @@ export const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_6g24gt3', 'template_imn9jer', form.current, {
-            publicKey: 'WNVR_tWPumhREht6F',
-        })
-            .then(
-                () => {
-                    Toastify({
-                        text: "Success",
-                        duration: 3000,
-                        position:'right',
-                        style: {
-                            background: "linear-gradient(to right, #00b09b, #96c93d)",
-                        },
-                    }).showToast();
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                },
-            );
-        Array.from(form.current.children).forEach(ele => ele.value = '');
+        try {
+            const inputs = form.current.elements;
+            if (!inputs[0].value || !inputs[1].value || !inputs[2].value) {
+                throw new Error("Please fill all fields");
+            }
+
+            emailjs
+                .sendForm('service_6g24gt3', 'template_imn9jer', form.current, {
+                    publicKey: 'WNVR_tWPumhREht6F',
+                })
+                .then(
+                    () => {
+                        Toastify({
+                            text: "Email sent successfully!",
+                            duration: 3000,
+                            position: 'right',
+                            style: {
+                                background: "linear-gradient(to right, #00b09b, #96c93d)",
+                            },
+                        }).showToast();
+                        form.current.reset();
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
+        } catch (error) {
+            Toastify({
+                text: error.message || "Something went wrong",
+                duration: 3000,
+                style: { background: "linear-gradient(to right, #ff5f6d, #ffc371)" },
+            }).showToast();
+        }
     };
+
     return (
         <>
             <div className="container mx-auto max-w-4xl text-center mt-20">
